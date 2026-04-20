@@ -1,9 +1,7 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include <string>
 #include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
-#include <SDL3/SDL_render.h>
+
+#include "World.h"
 
 int main(void) {
     SDL_Window *window;
@@ -130,6 +128,8 @@ int main(void) {
     SDL_DestroyWindow(window);
 
     SDL_Quit();
+
+    World world;
 
     return EXIT_SUCCESS;
 }
