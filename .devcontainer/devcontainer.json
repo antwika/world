@@ -1,0 +1,15 @@
+{
+  "image": "ubuntu:22.04",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": ["esbenp.prettier-vscode"]
+    }
+  },
+  "forwardPorts": [3000],
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}
