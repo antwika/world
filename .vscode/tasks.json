@@ -10,6 +10,17 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "ctest",
+      "args": ["--test-dir", "build", "--output-on-failure"],
+      "dependsOn": "Build",
+      "group": {
+        "kind": "test"
+      },
+      "problemMatcher": []
     }
   ]
 }

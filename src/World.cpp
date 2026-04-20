@@ -9,3 +9,7 @@ World::World() {
 World::~World() {
     std::cout << "World destroyed" << std::endl;
 }
+
+bool World::isEven(int num) {
+    return num % 2 == 0;
+}

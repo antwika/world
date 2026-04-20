@@ -5,6 +5,7 @@ class World {
     public:
         World();
         ~World();
+        bool isEven(int num);
 };
 
 #endif
